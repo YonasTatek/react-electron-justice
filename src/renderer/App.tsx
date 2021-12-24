@@ -118,7 +118,7 @@ function App() {
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
-          justifyContent: 'center',
+         justifyContent:"center"
         }}
         onSubmit={handleSubmit}
       >
@@ -127,6 +127,7 @@ function App() {
           {err?.length1 ? <p style={{ color: 'red' }}>{err.length1}</p> : <></>}
         </p>
         <input
+        style={{width:200,height:30,borderRadius:10,borderColor:"blue"}}
           type="number"
           name="length1"
           placeholder="enter length 1"
@@ -142,6 +143,7 @@ function App() {
           )}
         </p>
         <input
+        style={{width:200,height:30,borderRadius:10,borderColor:"blue"}}
           type="number"
           name="quantity1"
           placeholder="enter Quantity 1 "
@@ -153,6 +155,7 @@ function App() {
           {err?.length2 ? <p style={{ color: 'red' }}>{err.length2}</p> : <></>}{' '}
         </p>
         <input
+        style={{width:200,height:30,borderRadius:10,borderColor:"blue"}}
           type="number"
           name="length2"
           placeholder="enter length 2"
@@ -168,6 +171,7 @@ function App() {
           )}
         </p>
         <input
+        style={{width:200,height:30,borderRadius:10,borderColor:"blue"}}
           type="number"
           name="quantity2"
           placeholder="enter Quantity 2"
@@ -175,7 +179,7 @@ function App() {
           required
         />
 
-        <input type="submit" value="Calculate" />
+        <input style={{backgroundColor: "#008CBA",width:100,height:50,marginTop:10}} type="submit" value="Calculate" />
       </form>
       {value ? (
         <p>
