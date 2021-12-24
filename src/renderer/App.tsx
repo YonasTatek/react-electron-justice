@@ -12,6 +12,7 @@ function App() {
     const quantity1 = parseInt(inputs.quantity1);
 
     const quantity2 = parseInt(inputs.quantity2);
+    seterr({value: false })
     if (length1 <= 0)
       seterr({
         ...err,
@@ -48,7 +49,7 @@ function App() {
         length1: 'Length can not be greater than 12',
         value: true,
       });
-    else seterr({ value: false });
+   
 
     if (!err.value) {
       const array = [
@@ -86,6 +87,7 @@ function App() {
 
     setvalue(result);
   };
+  console.log(err)
 
   const handleChange = (events) => {
     const { name } = events.target;
