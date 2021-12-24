@@ -9,11 +9,14 @@
 
 
 ## Install
-
+```
 
 git clone https://github.com/YonasTatek/react-electron-justice.git
 cd react-electron-justice
 npm install
+
+```
+
 ```
 
 ## Starting Development
